@@ -1,0 +1,53 @@
+:root {
+  --outer-space: #33393f;
+  --bright-turquoise: #2aefcb;
+  --gin: #e0eae4;
+  --heliotrope: #e866ec;
+  --skyblue: #87ceeb;
+  --white: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--skyblue);
+  color: var(--white);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 1200px;
+  margin: 2% auto;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 2%;
+  font-size: 200%;
+  font-family: serif;
+}
+.about-me {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -5%;
+  flex-direction: row;
+}
+.paragraph {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 7%;
+}
