@@ -31,7 +31,10 @@ main {
   margin: 0 auto;
   padding: 50px 20px;
 }
-
+.about-me {
+  border: 2px solid #666;
+  padding: 10px;
+}
 .about-me p {
   line-height: 1.6;
   font-size: 1.2rem;
@@ -48,7 +51,14 @@ main {
   transform: scale(1.1);
   border: 5px solid #ffcc00;
 }
-
+.portfolio p {
+  border: 2px solid #666;
+  padding: 10px;
+}
+.resume p {
+  border: 2px solid #666;
+  padding: 10px;
+}
 .contact-me ul li {
   font-size: 1.2rem;
   margin-bottom: 10px;
