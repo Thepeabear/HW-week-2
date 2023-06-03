@@ -12,9 +12,9 @@ header {
   background-color: #663399;
   color: #fff;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
 }
 
 header h1 {
@@ -22,22 +22,35 @@ header h1 {
   margin: 0;
 }
 
-nav .contacts li {
-  margin-right: 20px;
+header a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 80px;
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding-top: 20px;
+  background: repeating-radial-gradient(circle, #fafafa, transparent 20%);
+  background-size: 3em 3em;
+  background-color: #e6e6e6;
+  opacity: 0.855;
 }
+
 .about-me {
   border: 2px solid #666;
-  padding: 10px;
+  padding: 15px;
 }
+
 .about-me p {
   line-height: 1.6;
   font-size: 1.2rem;
+}
+
+.about-me img {
+  height: 220px;
+  margin: 10px;
 }
 
 .portfolio img {
@@ -51,14 +64,35 @@ main {
   transform: scale(1.1);
   border: 5px solid #ffcc00;
 }
+
 .portfolio p {
+  line-height: 1.2;
+  font-size: 1.2rem;
   border: 2px solid #666;
   padding: 10px;
 }
+
+.portfolio a {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.resume {
+  margin-top: 35px;
+  border: 2px solid #666;
+  padding: 10px;
+  margin-top: 20px;
+}
+
 .resume p {
-  border: 2px solid #666;
-  padding: 10px;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  padding: 5px;
 }
+
 .contact-me ul li {
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -69,4 +103,45 @@ footer {
   color: #666;
   text-align: center;
   padding: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header a {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .portfolio a {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .about-me img,
+  .portfolio img {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header a {
+    font-size: 1.2rem;
+  }
+
+  .about-me p,
+  .portfolio p,
+  .resume p,
+  .contact-me ul li {
+    font-size: 1rem;
+  }
 }
